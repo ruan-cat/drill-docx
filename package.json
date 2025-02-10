@@ -1,0 +1,27 @@
+{
+  "name": "@ruan-cat-doc/drill-docx",
+  "version": "0.0.0",
+  "private": true,
+  "description": "这是一个单纯的仓库，仅仅是为了存储文档。是一个静态文件存储库",
+  "packageManager": "pnpm@9.15.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drill",
+    "docx"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "author": "ruan-cat",
+  "license": "MIT",
+  "devDependencies": {
+    "@ruan-cat/commitlint-config": "^0.1.4",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.11.0"
+  }
+}
