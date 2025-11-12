@@ -3,25 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "description": "这是一个单纯的仓库，仅仅是为了存储文档。是一个静态文件存储库",
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.21.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
+    "clear:deps": "rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml}'",
+    "clear:cache": "rimraf -g '**/{dist,.turbo,.vercel,.cache,.temp}'"
   },
   "keywords": [
     "drill",
     "docx"
   ],
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git"
-    }
-  },
   "author": "ruan-cat",
   "license": "MIT",
   "devDependencies": {
-    "@ruan-cat/commitlint-config": "^0.1.4",
+    "@ruan-cat/commitlint-config": "^4.3.0",
+    "@ruan-cat/taze-config": "^0.3.0",
     "commitizen": "^4.3.1",
-    "cz-git": "^1.11.0"
+    "cz-git": "^1.12.0",
+    "taze": "^19.9.0"
   }
 }
