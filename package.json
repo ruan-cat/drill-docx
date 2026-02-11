@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "这是一个单纯的仓库，仅仅是为了存储文档。是一个静态文件存储库",
-  "packageManager": "pnpm@10.21.0",
+  "packageManager": "pnpm@10.29.2",
   "main": "index.js",
   "scripts": {
     "up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
@@ -17,10 +17,10 @@
   "author": "ruan-cat",
   "license": "MIT",
   "devDependencies": {
-    "@ruan-cat/commitlint-config": "^4.3.0",
-    "@ruan-cat/taze-config": "^0.3.0",
+    "@ruan-cat/commitlint-config": "^4.9.1",
+    "@ruan-cat/taze-config": "^1.0.2",
     "commitizen": "^4.3.1",
     "cz-git": "^1.12.0",
-    "taze": "^19.9.0"
+    "taze": "^19.9.2"
   }
 }
