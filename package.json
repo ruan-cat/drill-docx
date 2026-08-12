@@ -1,26 +1,34 @@
 {
-  "name": "@ruan-cat-doc/drill-docx",
-  "version": "0.0.0",
-  "private": true,
-  "description": "这是一个单纯的仓库，仅仅是为了存储文档。是一个静态文件存储库",
-  "packageManager": "pnpm@10.29.2",
-  "main": "index.js",
-  "scripts": {
-    "up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
-    "clear:deps": "rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml}'",
-    "clear:cache": "rimraf -g '**/{dist,.turbo,.vercel,.cache,.temp}'"
-  },
-  "keywords": [
-    "drill",
-    "docx"
-  ],
-  "author": "ruan-cat",
-  "license": "MIT",
-  "devDependencies": {
-    "@ruan-cat/commitlint-config": "^4.9.1",
-    "@ruan-cat/taze-config": "^1.0.2",
-    "commitizen": "^4.3.1",
-    "cz-git": "^1.12.0",
-    "taze": "^19.9.2"
-  }
+	"name": "@ruan-cat-doc/drill-docx",
+	"version": "0.0.0",
+	"private": true,
+	"description": "这是一个单纯的仓库，仅仅是为了存储文档。是一个静态文件存储库",
+	"packageManager": "pnpm@10.29.2",
+	"main": "index.js",
+	"scripts": {
+		"up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
+		"clear:deps": "rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml}'",
+		"clear:cache": "rimraf -g '**/{dist,.turbo,.vercel,.cache,.temp}'",
+		"format": "prettier --experimental-cli --write --no-parallel .",
+		"prepare": "simple-git-hooks"
+	},
+	"keywords": [
+		"drill",
+		"docx"
+	],
+	"author": "ruan-cat",
+	"license": "MIT",
+	"devDependencies": {
+		"@commitlint/cli": "^21.2.1",
+		"@prettier/plugin-oxc": "^0.2.2",
+		"@ruan-cat/commitlint-config": "^4.9.1",
+		"@ruan-cat/taze-config": "^1.0.2",
+		"commitizen": "^4.3.1",
+		"cz-git": "^1.12.0",
+		"lint-staged": "^17.3.0",
+		"prettier": "^3.9.6",
+		"prettier-plugin-lint-md": "1.0.1",
+		"simple-git-hooks": "^2.13.1",
+		"taze": "^19.9.2"
+	}
 }
