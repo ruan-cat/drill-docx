@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"description": "这是一个单纯的仓库，仅仅是为了存储文档。是一个静态文件存储库",
-	"packageManager": "pnpm@10.29.2",
+	"packageManager": "pnpm@12.4.1",
 	"main": "index.js",
 	"scripts": {
 		"up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
